@@ -6,7 +6,7 @@ require('dotenv').config()
 const query = require('express/lib/middleware/query');
 const app = express()
 app.use(cors())
-const port = 5000
+const port = process.env.PORT || 5000
 app.use(express.json())
 
 
